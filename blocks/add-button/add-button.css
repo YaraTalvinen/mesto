@@ -1,0 +1,37 @@
+.add-button {
+  width: 150px;
+  height: 50px;
+  background-image: url(../../images/Add_Button.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.add-button:hover {
+  opacity: .6;
+  transition: .6s ease-in-out;
+}
+
+@media screen and (max-width: 790px) {
+  .add-button {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .add-button {
+    min-width: 282px;
+    margin: 0 auto;
+  }
+}
+
+
+/*вообще была такая мысль, что add-button вообще можно было бы вынести за пределы profile, потому что теоретически
+ее ведь можно впоследствии переиспользовать, где угодно или?....*/

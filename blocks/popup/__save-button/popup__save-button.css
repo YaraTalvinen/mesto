@@ -1,0 +1,26 @@
+.popup__save-button {
+  width: 358px;
+  height: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  /*border-radius: 7px; хочу скругленные уголочки, а нельзя :( */
+  margin: 18px auto 37px;
+  cursor: pointer;
+}
+
+.popup__save-button:hover {
+  background-color: #000;
+  opacity: .8;
+  transition: .8s ease-in-out;
+}
+
+@media screen and (max-width: 390px) {
+  .popup__save-button {
+    width: 238px;
+  }
+}

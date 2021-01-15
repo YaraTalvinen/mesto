@@ -1,0 +1,9 @@
+.profile__avatar-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 169px;
+    height: 127px;
+    position: relative;
+    /*border: 1px solid red;*/
+}

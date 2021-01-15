@@ -1,0 +1,12 @@
+.like-box__like {
+  transition: .2s linear;
+}
+
+.like-box__like:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.like-box__like:active {
+  fill: #000;
+}
