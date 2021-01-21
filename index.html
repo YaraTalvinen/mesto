@@ -20,65 +20,50 @@
       <section class="profile">
         <!--PROFILE-->
         <div class="profile__container">
-          <div class="profile__avatar-holder">
-            <img src="./images/profile_img.jpg" alt="Аватар профиля" class="profile__avatar">
-          </div>
+          <img src="./images/profile_img.jpg" alt="Аватар профиля" class="profile__avatar">
           <div class="profile__info">
             <div class="profile__name-holder">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <button type="button" class="edit-button"></button>
+              <button type="button" class="profile__edit-button"></button>
             </div>
             <p class="profile__job">Исследователь океана</p>
           </div>
         </div>
-        <button type="button" class="add-button"></button>
+        <button type="button" class="profile__add-button"></button>
       </section>
       <section class="photo-grid">
         <!--GRID-->
         <div class="card">
           <img src="./images/Karachayevsk.jpg" alt="Полуразрушенный храм на фоне поросшей лесом горы" class="card__image">
-          <div class="like-box">
-            <h2 class="card__title">Карачаевск</h2>
-            <img src="./images/LikeHeart.svg" alt="Значок-сердечко 'Нравится'" class="like-box__like">
-          </div>
+          <h2 class="card__title">Карачаевск</h2>
+          <button type="button" class="card__like"></button>
         </div>
         <div class="card">
           <img src="./images/Elbrus.png" alt="Гора Эльбрус на рассвете" class="card__image">
-          <div class="like-box">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <img src="./images/LikeHeart.svg" alt="Значок-сердечко 'Нравится'" class="like-box__like">
-          </div>
+          <h2 class="card__title">Гора Эльбрус</h2>
+          <button type="button" class="card__like"></button>
         </div>
         <div class="card">
           <img src="./images/Dombay.jpg" alt="Заснеженные горные пики Домбая" class="card__image">
-          <div class="like-box">
-            <h2 class="card__title">Домбай</h2>
-            <img src="./images/LikeHeart.svg" alt="Значок-сердечко 'Нравится'" class="like-box__like">
-          </div>
+          <h2 class="card__title">Домбай</h2>
+          <button type="button" class="card__like"></button>
         </div>
         <div class="card">
           <img src="./images/Elbrus.png" alt="Гора Эльбрус на рассвете" class="card__image">
-          <div class="like-box">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <img src="./images/LikeHeart.svg" alt="Значок-сердечко 'Нравится'" class="like-box__like">
-          </div>
+          <h2 class="card__title">Гора Эльбрус</h2>
+          <button type="button" class="card__like"></button>
         </div>
         <div class="card">
           <img src="./images/Dombay.jpg" alt="Заснеженные горные пики Домбая" class="card__image">
-          <div class="like-box">
-            <h2 class="card__title">Домбай</h2>
-            <img src="./images/LikeHeart.svg" alt="Значок-сердечко 'Нравится'" class="like-box__like">
-          </div>
+          <h2 class="card__title">Домбай</h2>
+          <button type="button" class="card__like"></button>
         </div>
         <div class="card">
           <img src="./images/Karachayevsk.jpg" alt="Полуразрушенный храм на фоне поросшей лесом горы" class="card__image">
-          <div class="like-box">
-            <h2 class="card__title">Карачаево-Черкессия</h2>
-            <img src="./images/LikeHeart.svg" alt="Значок-сердечко 'Нравится'" class="like-box__like">
-          </div>
+          <h2 class="card__title">Карачаево-Черкессия</h2>
+          <button type="button" class="card__like"></button>
         </div>
       </section>
-
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; Mesto Russia</p>
@@ -87,17 +72,19 @@
   <!--END OF PAGE-->
   <!--POPUP-->
   <div class="popup">
-    <form class="popup__container">
+    <div class="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
-      <fieldset class="popup__input-form" name="editProfile" novalidate>
-        <input type="text" minlength="1" maxlength="50" class="popup__input popup__input_name_name" name="name" id="name-input" placeholder="Имя" value="Жак-Ив Кусто" required>
-        <input type="text" minlength="3" maxlength="100" class="popup__input popup__input_name_job" name="job" id="job-input" placeholder="Род занятий" value="Исследователь океана" required>
-        <button type="submit" class="popup__save-button" name="submit">Сохранить</button>
-      </fieldset>
+      <form class="popup__form" name="edit-profile">
+        <fieldset class="popup__fieldset" name="editProfile" novalidate>
+          <input type="text" minlength="1" maxlength="50" class="popup__input popup__input_name_name" name="name" id="name-input" placeholder="Имя" required>
+          <input type="text" minlength="3" maxlength="100" class="popup__input popup__input_name_job" name="job" id="job-input" placeholder="Род занятий" required>
+          <button type="submit" class="popup__save-button" name="submit">Сохранить</button>
+        </fieldset>
+      </form>
       <button type="button" class="popup__close-button"></button>
-    </form>
+    </div>
   </div>
-  <script src="./script.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

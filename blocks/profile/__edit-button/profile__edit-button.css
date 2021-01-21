@@ -1,7 +1,7 @@
-.edit-button {
+.profile__edit-button {
   width: 24px;
   height: 24px;
-  background-image: url(../../images/Edit_Button.svg);
+  background-image: url(../../../images/Edit_Button.svg);
   background-position: center;
   background-color: #000;
   background-repeat: no-repeat;
@@ -12,18 +12,15 @@
   transition: .6s ease-in-out;
 }
 
-.edit-button:hover {
+.profile__edit-button:hover {
   opacity: .6;
   transition: .6s ease-in-out;
 }
 
 @media screen and (max-width: 790px) {
-  .edit-button {
+  .profile__edit-button {
     width: 18px;
     height: 18px;
     margin-left: 10px;
   }
 }
-
-
-/*та же самая мясль насчет этой кнопки. Можно ли ее вынести одельным блоком, а не частью profile? */

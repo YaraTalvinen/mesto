@@ -1,9 +1,10 @@
 .popup__close-button {
   width: 40px;
   height: 40px;
-  position: absolute;
-  top: calc(0% - 40px);
+  position: relative;
   left: 100%;
+  bottom: 322px;
+  /*если указываю в процентах, то уползает вниз, перепробовала разные значения, включая отрицательные, включая calc*/
   background-image: url(../../../images/Close_Icon.png);
   background-color: rgba(0, 0, 0, .0);
   background-position: center;
@@ -16,6 +17,8 @@
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 0;
+  /* border: 1px solid red;*/
 }
 
 .popup__close-button:hover {
