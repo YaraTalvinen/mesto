@@ -9,6 +9,15 @@
   margin: 34px 64px 54px 36px;
 }
 
+@media screen and (max-width: 590px) {
+  .popup__title {
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 64px 54px auto;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .popup__title {
     width: 238px;

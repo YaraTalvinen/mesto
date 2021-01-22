@@ -22,6 +22,12 @@
   transition: .8s ease-in-out;
 }
 
+@media screen and (max-width: 590px) {
+  .popup__save-button {
+    width: 84%;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .popup__save-button {
     width: 238px;
